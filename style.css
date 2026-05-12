@@ -84,3 +84,120 @@ body {
     background-color: #1d4ed8;
     transform: translateY(-2px);
 }
+
+.services-header {
+    text-align: center;
+    padding: 80px 5% 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 100px;
+    padding: 0 5%;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: #2563eb;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background: #eff6ff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: #2563eb;
+    font-size: 1.5rem;
+}
+
+.pricing-header {
+    text-align: center;
+    padding: 80px 5% 40px;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto 100px;
+    padding: 0 5%;
+}
+
+.price-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.price-card:hover {
+    border: 2px solid #2563eb;
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.1);
+}
+
+.price-amount {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.features-list li::before {
+    content: "✓";
+    color: #2563eb;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.btn-select {
+    display: block;
+    width: auto;
+    padding: 1rem;
+    background: #f1f5f9;
+    color: #1e293b;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-select:hover {
+    background: #2563eb;
+    color: white;
+}
